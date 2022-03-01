@@ -1,0 +1,28 @@
+// ## Layout
+// - Mobile: 375px
+// - Desktop: 1440px
+// ### Primary Colors
+$Moderate-violet: hsl(263, 55%, 52%);
+$Very-dark-grayish-blue: hsl(217, 19%, 35%);
+$Very-dark-blackish-blue: hsl(219, 29%, 14%);
+$White: hsl(0, 0%, 100%);
+// ### Neutral Colors
+$Light-gray: hsl(0, 0%, 81%);
+$Light-grayish-blue: hsl(210, 46%, 95%);
+// ### Font
+$barlowSemiCondensed: 'Barlow Semi Condensed',
+sans-serif;
+$bold: 500;
+$boldest: 600;
+// inline
+@mixin inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+// medium devices 800px
+$medium-devices: 50em;
+// large devices 1024px
+$large-devices:64em;

@@ -1,0 +1,42 @@
+#daniel-clifford {
+    background-color: $Moderate-violet;
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+    p {
+        padding-right: 1em;
+    }
+    @media only screen and (min-width: $medium-devices) {
+        grid-area: one;
+    }
+}
+
+#jonathan-walters {
+    background-color: $Very-dark-grayish-blue;
+    @media only screen and (min-width: $medium-devices) {
+        grid-area: two;
+    }
+}
+
+#jeanette-harmon {
+    background-color: $Light-grayish-blue;
+    color: $Very-dark-blackish-blue;
+    @media only screen and (min-width: $medium-devices) {
+        grid-area: three;
+    }
+}
+
+#patrick-abrams {
+    background-color: $Very-dark-blackish-blue;
+    @media only screen and (min-width: $medium-devices) {
+        grid-area: four;
+    }
+}
+
+#kira-whittle {
+    background-color: $Light-grayish-blue;
+    color: $Very-dark-blackish-blue;
+    @media only screen and (min-width: $medium-devices) {
+        grid-area: five;
+    }
+}

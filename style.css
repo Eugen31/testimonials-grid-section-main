@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  background-color: #cfcfcf;
+  display: -ms-grid;
+  display: grid;
+  place-items: stretch;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.812rem;
+  font-weight: 500;
+  padding: 20% 6%;
+}
+
+@media only screen and (min-width: 64em) {
+  .container {
+        grid-template-areas: 'one one two five' 'three four four five';
+    font-size: calc(0.6rem + 0.2vw);
+    padding: 10% 12%;
+  }
+}
+
+@media only screen and (min-width: 50em) and (max-width: 64em) {
+  .container {
+        grid-template-areas: 'one one' 'two five' 'three five' 'four four';
+  }
+}
+
+.testimonials {
+  border-radius: 10px;
+  padding: 2.9em;
+  color: white;
+}
+
+.testimonials .testimonial-person .img-div img {
+  max-width: 65%;
+  border-radius: 50%;
+}
+
+.testimonials .testimonial-person .customer-info {
+  font-size: calc(0.55rem + 0.4vh);
+}
+
+.testimonials .testimonial-person .customer-info p {
+  opacity: 50%;
+}
+
+.testimonials .testimonial-title {
+  padding: 2em 0;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.testimonials .testimonial-content p {
+  opacity: 70%;
+  line-height: 1.1rem;
+}
+
+.testimonial-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#daniel-clifford {
+  background-color: #7541c8;
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 10%;
+}
+
+#daniel-clifford p {
+  padding-right: 1em;
+}
+
+@media only screen and (min-width: 50em) {
+  #daniel-clifford {
+    grid-area: one;
+  }
+}
+
+#jonathan-walters {
+  background-color: #48556a;
+}
+
+@media only screen and (min-width: 50em) {
+  #jonathan-walters {
+    grid-area: two;
+  }
+}
+
+#jeanette-harmon {
+  background-color: #ecf2f8;
+  color: #19212e;
+}
+
+@media only screen and (min-width: 50em) {
+  #jeanette-harmon {
+    grid-area: three;
+  }
+}
+
+#patrick-abrams {
+  background-color: #19212e;
+}
+
+@media only screen and (min-width: 50em) {
+  #patrick-abrams {
+    grid-area: four;
+  }
+}
+
+#kira-whittle {
+  background-color: #ecf2f8;
+  color: #19212e;
+}
+
+@media only screen and (min-width: 50em) {
+  #kira-whittle {
+    grid-area: five;
+  }
+}
+/*# sourceMappingURL=style.css.map */
